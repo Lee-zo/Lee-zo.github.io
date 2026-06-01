@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="index.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;    
+}
+ul {
+    list-style-type: none;
+}
+body {
+    font-family: "Do Hyeon", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+section#main img {
+    width: 90%;
+}
+[class*="c_"] {
+    float: left;
+    padding: 10px;
+}
+
+[class*="c_"] {
+    width: 100%;
+}
+/* 너비가 600픽셀 이상인 태블릿을 위한 설정 */
+@media only screen and (min-width: 600px) {
+    .c_m_1 {width: 8.33%;}
+    .c_m_2 {width: 16.66%;}
+    .c_m_3 {width: 25%;}
+    .c_m_4 {width: 33.33%;}
+    .c_m_5 {width: 41.66%;}
+    .c_m_6 {width: 50%;}
+    .c_m_7 {width: 58.33%;}
+    .c_m_8 {width: 66.66%;}
+    .c_m_9 {width: 75%;}
+    .c_m_10 {width: 83.33%;}
+    .c_m_11 {width: 91.66%;}
+    .c_m_12 {width: 100%;}
+}
+/* 너비가 768픽셀 이상인 데스크톱 컴퓨터, 노트북 등 */
+@media only screen and (min-width: 768px) {
+    .c_1 {width: 8.33%; }
+    .c_2 {width: 16.66%; }
+    .c_3 {width: 25%; }
+    .c_4 {width: 33.33%; }
+    .c_5 {width: 41.66%; }
+    .c_6 {width: 50%; }
+    .c_7 {width: 58.33%; }
+    .c_8 {width: 66.66%; }
+    .c_9 {width: 75%; }
+    .c_10 {width: 83.33%; }
+    .c_11 {width: 91.66%; }
+    .c_12 {width: 100%; }
+}
+
+header {
+    height: 80px;
+    padding: 20px;    
+    background-color: #ff5c5c;
+}
+header h1 {
+    color: white;
+}
+
+aside#menu {
+    color: #ffffff;   
+}
+aside#menu li {
+    margin: 5px 0 0 0;    
+    background-color: #ff2e2e;
+    transition: background 0.2s;
+}
+
+aside#menu li:not(.now_select):hover {
+    background-color: #ff5c5c;
+    cursor: pointer;
+}
+
+aside#menu li.now_select {
+    background-color: #ff8a8a;
+    color: #333333;
+    font-weight: bold;
+    padding: 10px;
+}
+
+aside#menu li a {
+    display: block;       
+    padding: 10px;         
+    color: #ffffff;      
+    text-decoration: none; 
+    width: 100%;          
+    height: 100%;          
+}
+section#main {
+    padding: 15px;
+}
+section#main h1 {
+    margin-bottom: 20px;
+}
+
+.kanji-block {
+    width: 100%;
+    clear: both; 
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #fcfcfc;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+}
+.kanji-block img {
+    display: block;
+    max-width: 180px; 
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.kanji-text h4 {
+    font-size: 1.2em;
+    color: #ff2e2e;
+    margin-bottom: 8px;
+}
+
+
+.kanji-info {
+    margin-top: 10px;
+}
+.kanji-info li {
+    font-size: 0.95em;
+    line-height: 1.8em; 
+    display: flex;       
+}
+.kanji-info .label {
+    display: inline-block;
+    width: 60px;         
+    font-weight: bold;
+    color: #ff5c5c;      }
+.kanji-info .value {
+    flex: 1;             
+    color: #444444;
+}
+
+footer {
+    height: 60px;
+    padding: 20px;    
+    clear: both;
+    text-align: center;
+    background-color: #eeeeee;
+}
+</style>
+</head>
+<body>
+  <header class="c_12">
+    <h1>초보자 일본어 공부</h1>
+  </header>
+
+  <aside id="menu" class="c_m_3 c_3">
+    <ul>
+      <ul>
+    <li><a href="index.html">히라가나</a></li>
+    <li class="now_select">카타카나</li>
+    <li><a href="etc.html">탁음 반탁음 요음</a></li>
+    <li><a href="etc2.html">촉음 장음</a></li>
+    <li ><a href="kanji.html">기초 한자</a></li> 
+  </ul>
+    </ul>
+  </aside>
+ 
+  <section id="main"  class="c_m_9 c_5">
+    <h1>카타가나</h1>
+    <img src="katakana.png" alt="">
+  </section>
+  <aside id="explain" class="c_m_12 c_3">
+    <h4>설명</h4>
+    <p>카타카나는 히라가나와 비슷한 모양이 많아서 히라가나를 다 외웠다면 쉽게 외울 수 있습니다.</p>
+  </aside>
+ 
+  <footer class="c_12">
+    COPYRIGHT(C) 이지호 All Rights Reseved.
+  </footer>    
+</body>
+</html>
