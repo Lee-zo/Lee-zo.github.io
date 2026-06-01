@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+ul { list-style-type: none; }
+body { font-family: "Do Hyeon", sans-serif; font-weight: 400; font-style: normal; }
+[class*="c_"] { float: left; padding: 10px; }
+[class*="c_"] { width: 100%; }
+@media only screen and (min-width: 600px) { .c_m_1 {width: 8.33%;} .c_m_2 {width: 16.66%;} .c_m_3 {width: 25%;} .c_m_4 {width: 33.33%;} .c_m_5 {width: 41.66%;} .c_m_6 {width: 50%;} .c_m_7 {width: 58.33%;} .c_m_8 {width: 66.66%;} .c_m_9 {width: 75%;} .c_m_10 {width: 83.33%;} .c_m_11 {width: 91.66%;} .c_m_12 {width: 100%;} }
+@media only screen and (min-width: 768px) { .c_1 {width: 8.33%; } .c_2 {width: 16.66%; } .c_3 {width: 25%; } .c_4 {width: 33.33%; } .c_5 {width: 41.66%; } .c_6 {width: 50%; } .c_7 {width: 58.33%; } .c_8 {width: 66.66%; } .c_9 {width: 75%; } .c_10 {width: 83.33%; } .c_11 {width: 91.66%; } .c_12 {width: 100%; } }
+header { height: 80px; padding: 20px; background-color: #ff5c5c; }
+header h1 { color: white; }
+aside#menu { color: #ffffff; }
+aside#menu li { margin: 5px 0 0 0; background-color: #ff2e2e; transition: background 0.2s; }
+aside#menu li:not(.now_select):hover { background-color: #ff5c5c; cursor: pointer; }
+aside#menu li.now_select { background-color: #ff8a8a; color: #333333; font-weight: bold; padding: 10px; }
+aside#menu li a { display: block; padding: 10px; color: #ffffff; text-decoration: none; width: 100%; height: 100%; }
+section#main { padding: 15px; }
+section#main h1 { margin-bottom: 20px; }
+section#main img { width: 90%; }
+.kanji-block { width: 100%; clear: both; margin-bottom: 25px; padding: 20px; background-color: #fcfcfc; border: 1px solid #eeeeee; border-radius: 8px; }
+.kanji-block img { display: block; max-width: 180px; width: 100%; height: auto; margin-bottom: 15px; }
+.kanji-text h4 { font-size: 1.2em; color: #ff2e2e; margin-bottom: 8px; }
+.kanji-info { margin-top: 10px; }
+.kanji-info li { font-size: 0.95em; line-height: 1.8em; display: flex; }
+.kanji-info .label { display: inline-block; width: 60px; font-weight: bold; color: #ff5c5c; }
+.kanji-info .value { flex: 1; color: #444444; }
+footer { height: 60px; padding: 20px; clear: both; text-align: center; background-color: #eeeeee; }
+</style>
+</head>
+<body>
+
+  <header class="c_12">
+    <h1>초보자 일본어 공부</h1>
+  </header>
+
+  <aside id="menu" class="c_m_3 c_3">
+    <ul>
+      <ul>
+        <li><a href="index.html">히라가나</a></li>
+        <li><a href="katagana.html">카타카나</a></li>
+        <li><a href="etc.html">탁음 반탁음 요음</a></li>
+        <li><a href="etc2.html">촉음 장음</a></li>
+        <li class="now_select">기초 한자</li> 
+      </ul>
+    </ul>
+  </aside>
+ 
+  <section id="main" class="c_m_9 c_5">
+    <h1>기초 한자</h1>
+    
+    <div class="kanji-block">
+      <img src="il.png" alt="일">
+      <div class="kanji-text">
+        <h4>日 (날 일)</h4>
+        <ul class="kanji-info">
+          <li><span class="label">의미</span><span class="value">"날 일". 하루, 날, 태양</span></li>
+          <li><span class="label">음독</span><span class="value">ニチ、ジツ</span></li>
+          <li><span class="label">훈독</span><span class="value">ひ、か</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="kanji-block">
+      <img src="one.png" alt="원">
+      <div class="kanji-text">
+        <h4>一 (한 일)</h4>
+        <ul class="kanji-info">
+          <li><span class="label">의미</span><span class="value">"한 일". 하나, 1</span></li>
+          <li><span class="label">음독</span><span class="value">イチ、イツ</span></li>
+          <li><span class="label">훈독</span><span class="value">ひと、ひと(つ)</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="kanji-block">
+      <img src="kuni.png" alt="국">
+      <div class="kanji-text">
+        <h4>国 (나라 국)</h4>
+        <ul class="kanji-info">
+          <li><span class="label">의미</span><span class="value">"나라 국". 나라, 국가</span></li>
+          <li><span class="label">음독</span><span class="value">コク</span></li>
+          <li><span class="label">훈독</span><span class="value">くに</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <aside id="explain" class="c_m_12 c_4">
+    <h4>설명</h4>
+    <p>기초 한자는 모양의 의미와 함께 음독, 훈독을 연관 지어 외우는 것이 중요합니다.</p>
+    <br>
+    <p>기초 한자를 잘 외운다면 촉음 장음을 헷갈리는 일도 적을 겁니다. 저도 열심히 한자와 단어를 공부하는 중이라 아직 부족하지만 같이 열심히 공부해봐요!</p>
+  </aside>
+  <footer class="c_12">
+    COPYRIGHT(C) 이지호 All Rights Reserved.
+  </footer>    
+
+</body>
+</html>
